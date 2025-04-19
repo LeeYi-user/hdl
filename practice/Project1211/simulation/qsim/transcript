@@ -1,0 +1,30 @@
+# do Project1211.do
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:45:40 on Dec 11,2024
+# vcom -work work Project1211.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package fiftyfivenm_atom_pack
+# -- Loading package fiftyfivenm_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity g0
+# -- Compiling architecture structure of g0
+# End time: 11:45:41 on Dec 11,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:45:41 on Dec 11,2024
+# vcom -work work Waveform.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity g0_vhd_vec_tst
+# -- Compiling architecture g0_arch of g0_vhd_vec_tst
+# End time: 11:45:41 on Dec 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# after#1

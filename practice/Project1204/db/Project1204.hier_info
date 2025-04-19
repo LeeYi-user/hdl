@@ -1,0 +1,23 @@
+|Moore_Ex
+Input => Selector0.IN3
+Input => NS.DATAB
+Input => Selector2.IN3
+Input => Selector3.IN1
+Input => PState.DATAA
+Input => Selector3.IN0
+Input => PState.DATAB
+Input => Selector2.IN1
+Input => Selector0.IN1
+Input => Selector1.IN1
+CK => PState[0]~reg0.CLK
+CK => PState[1]~reg0.CLK
+CK => PState[2]~reg0.CLK
+CK => PState[3]~reg0.CLK
+CK => NS~3.DATAIN
+PState[0] << PState[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PState[1] << PState[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PState[2] << PState[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PState[3] << PState[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Output << Output.DB_MAX_OUTPUT_PORT_TYPE
+
+

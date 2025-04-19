@@ -1,0 +1,120 @@
+|Adder4
+Cout <= FullAdder:inst.pin_name5
+A4 => FullAdder:inst.pin_name1
+B4 => FullAdder:inst.pin_name2
+A3 => FullAdder:inst1.pin_name1
+B3 => FullAdder:inst1.pin_name2
+A2 => FullAdder:inst2.pin_name1
+B2 => FullAdder:inst2.pin_name2
+A1 => FullAdder:inst3.pin_name1
+B1 => FullAdder:inst3.pin_name2
+S1 <= FullAdder:inst3.pin_name4
+S2 <= FullAdder:inst2.pin_name4
+S3 <= FullAdder:inst1.pin_name4
+S4 <= FullAdder:inst.pin_name4
+
+
+|Adder4|FullAdder:inst
+pin_name4 <= Project1009:inst1.pin_name3
+pin_name1 => Project1009:inst.pin_name1
+pin_name2 => Project1009:inst.pin_name2
+pin_name3 => Project1009:inst1.pin_name2
+pin_name5 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4|FullAdder:inst|Project1009:inst1
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst.IN0
+pin_name1 => inst2.IN0
+pin_name2 => inst.IN1
+pin_name2 => inst2.IN1
+pin_name4 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4|FullAdder:inst|Project1009:inst
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst.IN0
+pin_name1 => inst2.IN0
+pin_name2 => inst.IN1
+pin_name2 => inst2.IN1
+pin_name4 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4|FullAdder:inst1
+pin_name4 <= Project1009:inst1.pin_name3
+pin_name1 => Project1009:inst.pin_name1
+pin_name2 => Project1009:inst.pin_name2
+pin_name3 => Project1009:inst1.pin_name2
+pin_name5 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4|FullAdder:inst1|Project1009:inst1
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst.IN0
+pin_name1 => inst2.IN0
+pin_name2 => inst.IN1
+pin_name2 => inst2.IN1
+pin_name4 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4|FullAdder:inst1|Project1009:inst
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst.IN0
+pin_name1 => inst2.IN0
+pin_name2 => inst.IN1
+pin_name2 => inst2.IN1
+pin_name4 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4|FullAdder:inst2
+pin_name4 <= Project1009:inst1.pin_name3
+pin_name1 => Project1009:inst.pin_name1
+pin_name2 => Project1009:inst.pin_name2
+pin_name3 => Project1009:inst1.pin_name2
+pin_name5 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4|FullAdder:inst2|Project1009:inst1
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst.IN0
+pin_name1 => inst2.IN0
+pin_name2 => inst.IN1
+pin_name2 => inst2.IN1
+pin_name4 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4|FullAdder:inst2|Project1009:inst
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst.IN0
+pin_name1 => inst2.IN0
+pin_name2 => inst.IN1
+pin_name2 => inst2.IN1
+pin_name4 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4|FullAdder:inst3
+pin_name4 <= Project1009:inst1.pin_name3
+pin_name1 => Project1009:inst.pin_name1
+pin_name2 => Project1009:inst.pin_name2
+pin_name3 => Project1009:inst1.pin_name2
+pin_name5 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4|FullAdder:inst3|Project1009:inst1
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst.IN0
+pin_name1 => inst2.IN0
+pin_name2 => inst.IN1
+pin_name2 => inst2.IN1
+pin_name4 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder4|FullAdder:inst3|Project1009:inst
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst.IN0
+pin_name1 => inst2.IN0
+pin_name2 => inst.IN1
+pin_name2 => inst2.IN1
+pin_name4 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

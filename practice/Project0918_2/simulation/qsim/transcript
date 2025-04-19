@@ -1,0 +1,21 @@
+# do project0918_2.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:53:09 on Sep 18,2024
+# vlog -work work project0918_2.vo 
+# -- Compiling module project0918_2
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	project0918_2
+# End time: 11:53:09 on Sep 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:53:09 on Sep 18,2024
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module project0918_2_vlg_vec_tst
+# 
+# Top level modules:
+# 	project0918_2_vlg_vec_tst
+# End time: 11:53:09 on Sep 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# after#1

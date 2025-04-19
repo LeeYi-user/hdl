@@ -1,0 +1,56 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity binary_to_seven_segment is
+    port(
+        binary_in: in std_logic_vector(9 downto 0);
+        seg0: out std_logic_vector(6 downto 0);
+        seg1: out std_logic_vector(6 downto 0);
+        seg2: out std_logic_vector(6 downto 0);
+        seg3: out std_logic_vector(6 downto 0)
+    );
+end binary_to_seven_segment;
+
+architecture arch of binary_to_seven_segment is
+    signal decimal_value: integer range 0 to 1023;
+    signal digit0, digit1, digit2, digit3: std_logic_vector(3 downto 0);
+begin
+    -- Convert binary input to integer
+    decimal_value <= to_integer(unsigned(binary_in));
+
+    -- Extract individual decimal digits
+    process(decimal_value)
+    begin
+        digit0 <= std_logic_vector(to_unsigned(decimal_value mod 10, 4));
+        digit1 <= std_logic_vector(to_unsigned((decimal_value / 10) mod 10, 4));
+        digit2 <= std_logic_vector(to_unsigned((decimal_value / 100) mod 10, 4));
+        digit3 <= std_logic_vector(to_unsigned((decimal_value / 1000) mod 10, 4));
+    end process;
+
+    -- Instantiate sev_seg component for each digit
+    sev_seg_inst0: entity work.sev_seg
+        port map(
+            x => digit0,
+            y => seg0
+        );
+
+    sev_seg_inst1: entity work.sev_seg
+        port map(
+            x => digit1,
+            y => seg1
+        );
+
+    sev_seg_inst2: entity work.sev_seg
+        port map(
+            x => digit2,
+            y => seg2
+        );
+
+    sev_seg_inst3: entity work.sev_seg
+        port map(
+            x => digit3,
+            y => seg3
+        );
+
+end arch;

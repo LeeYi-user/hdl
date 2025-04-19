@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "PState[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PState[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Output",
+					"strict" : false
+				},
+				{
+					"name" : "Input",
+					"strict" : false
+				},
+				{
+					"name" : "CK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,43 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+-- Top-level entity
+entity TopModule is
+    port(
+        CK: in std_logic; -- Clock signal
+        SEG: out std_logic_vector(6 downto 0); -- Seven-segment output
+        DIGIT_SELECT: out std_logic_vector(2 downto 0) -- Digit select (for potential multi-digit support)
+    );
+end TopModule;
+
+architecture Behavioral of TopModule is
+
+    -- Signal declarations
+    signal Y0, Y1, Y2: std_logic_vector(3 downto 0); -- BCD outputs
+    signal selected_digit: std_logic_vector(3 downto 0); -- Selected BCD digit
+
+begin
+    -- Instantiate BCDCounter
+    U1: entity work.BCDCounter
+        generic map (n => 168) -- Modify n as needed
+        port map (
+            CK => CK,
+            Y2 => Y2,
+            Y1 => Y1,
+            Y0 => Y0
+        );
+
+    -- Instantiate sev_seg
+    U2: entity work.sev_seg
+        port map (
+            x => selected_digit,
+            y => SEG
+        );
+
+    -- Select the digit to display (here we use Y0 as an example for single-digit display)
+    selected_digit <= Y0;
+
+    -- For a single-digit display, fix DIGIT_SELECT to select only one digit (e.g., first digit)
+    DIGIT_SELECT <= "001";
+
+end Behavioral;

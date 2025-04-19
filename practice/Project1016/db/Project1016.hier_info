@@ -1,0 +1,26 @@
+|projectfs2
+D <= projecths:inst2.D
+A => projecths:inst.A
+B => projecths:inst.B
+Bin => projecths:inst2.B
+Bout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projectfs2|projecths:inst2
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst2.IN0
+Bo <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projectfs2|projecths:inst
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst2.IN0
+Bo <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

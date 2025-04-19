@@ -1,0 +1,21 @@
+|Encoder8_3
+EN => Y.IN0
+EN => Y.IN0
+EN => Y.IN0
+EN => Y.IN0
+EN => Y.IN0
+EN => Y.IN0
+EN => Y.IN0
+A[0] => ~NO_FANOUT~
+A[1] => Y.IN1
+A[2] => Y.IN1
+A[3] => Y.IN1
+A[4] => Y.IN1
+A[5] => Y.IN1
+A[6] => Y.IN1
+A[7] => Y.IN1
+Y[0] << Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] << Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] << Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

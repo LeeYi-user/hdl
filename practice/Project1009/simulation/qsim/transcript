@@ -1,0 +1,21 @@
+# do Project1009.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:03:40 on Oct 09,2024
+# vlog -work work Project1009.vo 
+# -- Compiling module Project1009
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	Project1009
+# End time: 10:03:40 on Oct 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:03:40 on Oct 09,2024
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module Project1009_vlg_vec_tst
+# 
+# Top level modules:
+# 	Project1009_vlg_vec_tst
+# End time: 10:03:41 on Oct 09,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# after#1

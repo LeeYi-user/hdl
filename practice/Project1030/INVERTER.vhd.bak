@@ -1,0 +1,12 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+ENTITY INVERTER is
+PORT(A: IN bit;
+		B: OUT bit);
+END INVERTER;
+
+architecture Dataflow of INVERTER is
+begin
+	B <= not A;
+end Dataflow;
